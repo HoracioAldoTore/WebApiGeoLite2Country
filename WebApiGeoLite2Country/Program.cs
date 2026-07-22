@@ -12,7 +12,7 @@ namespace WebApiGeoLite2Country
 
             builder.Services.AddControllers();
 
-            builder.Services.AddScoped<IGeoIpCacheService, GeoIpCacheService>();
+            builder.Services.AddSingleton<IGeoIpCacheService, GeoIpCacheService>();
 
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
